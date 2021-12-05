@@ -62,9 +62,9 @@ public class Punkt {
         this.pY=pY;
         this.pZ=pZ;
     }
-    public void suma(int suma)
+    public int suma()
     {
-        suma=pX+pY+pZ;
+        return pX+pY+pZ;
     }
     public int roznica()
     {
