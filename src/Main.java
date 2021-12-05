@@ -17,12 +17,20 @@ public class Main {
             d) dane powinny być estetycznie przedstawione
          */
         Student[] student = new Student[3];
-        student[0]= new Student("Jan" , "Kowalski" ,116 );
-        student[1] = new Student("Bogdan", "jolek" ,5888);
-        student[2] = new Student("Kamil" , "Kokoszek" , 519778);
+        student[0]= new Student("Jan" , "Kowalski" ,116 , false);
+        student[1] = new Student("Bogdan", "jolek" ,5888,true);
+        student[2] = new Student("Kamil" , "Kokoszek" , 519778 ,true);
         for (Student p : student)
         {
-            System.out.println(p.imie + " " + p.nazwisko + " " + p.nr_indeksu);
+            p.WypiszInfo();
+            System.out.println();
+            //System.out.println("Imie:" + " " + p.imie);
+            //System.out.println("Nazwisko: " +  " " + p.nazwisko );
+            //System.out.println("Numer indeksu:" + " "+ p.nr_indeksu);
+            //System.out.println("status" + " " + p.status);
+            //System.out.println();
+
+
         }
 
 
