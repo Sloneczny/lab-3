@@ -32,13 +32,6 @@ public class Main {
 
 class Student
 {
-    public String getImie() {
-        return imie;
-    }
-
-    public void setImie(String imie) {
-        this.imie = imie;
-    }
 
     public String imie ;
     public String nazwisko;
