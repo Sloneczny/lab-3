@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
+
+
     public static void main(String[] args) {
 
         /* ćw 2 klasy */
@@ -14,5 +16,56 @@ public class Main {
             c) wyświetlić dane z tablicy, użyć pętli for lub forEach
             d) dane powinny być estetycznie przedstawione
          */
+        Student[] student = new Student[3];
+        student[0]= new Student("jan" , "kowalski" ,116 );
+        student[1] = new Student("Bogdan", "jolek" ,5888);
+        student[2] = new Student("Kamil" , "Kokoszek" , 519778);
+        for (Student p : student)
+        {
+            System.out.println(p.imie + " " + p.nazwisko + " " + p.nr_indeksu);
+        }
+
+
+
     }
+}
+
+class Student
+{
+    public String getImie() {
+        return imie;
+    }
+
+    public void setImie(String imie) {
+        this.imie = imie;
+    }
+
+    public String imie ;
+    public String nazwisko;
+    public int nr_indeksu;
+    public boolean ocena;
+
+    public Student(  String imie_ , String nazwisko_, int nr_indeksu_)
+    {
+        this.nazwisko=nazwisko_;
+        this.imie=imie_;
+        this.nr_indeksu= nr_indeksu_;
+
+
+
+    }
+
+
+
+    boolean WypiszInfo(int ocena)
+    { if(ocena <=0)
+        return true;
+
+    else
+        return false;
+
+
+    }
+
+
 }
