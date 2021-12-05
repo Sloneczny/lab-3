@@ -26,9 +26,9 @@ public class Main {
              B.setpY(8);
              B.setpZ(6);
              B.toString();
-        System.out.println(B.getpX());
-        System.out.println(B.getpY());
-        System.out.println(B.getpZ());
+        System.out.println("X" + " " + B.getpX());
+        System.out.println("Y" + " " + B.getpY());
+        System.out.println("Z" + " " + B.getpZ());
         System.out.println("suma" + " " + B.suma());
         System.out.println("roznica pierwsza " + " " + B.roznica());
         System.out.println("roznica dróga " + " " + B.roznica(1,2,3));
