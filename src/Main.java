@@ -8,6 +8,7 @@ public class Main {
 
         /* zad.1
         a) Stworzyć prosty enum "LiczbyEnum" z liczbami od 1 do 6 zapisanymi słownie,
+
         b) stworzyć prosty enum "StatusEnum" z wartościami KONTYNUUJEMY i KONIEC,
         c) stworzyć pętlę while z wartością true w warunku (nieskończona pętla),
         d) niech w pętli są podawane wartości liczbowe z klawiatury,
@@ -19,6 +20,12 @@ public class Main {
 
         /* statusy i wybór ze switch case to najczęstsze użycia enumów, enumy są często używane
         * w różnego rodzaju listach, selectach jako krótkie opcje wyboru np. jako status A, X (Aktualny, Usunięty) */
+//a
+        System.out.println("liczba " + LiczbyEnum.Jeden);
 
     }
+}
+enum LiczbyEnum
+{ Jeden,Dwa,Trzy,Cztery,Pięć ,Sześć;
+
 }
