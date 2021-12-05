@@ -17,7 +17,7 @@ public class Main {
             d) dane powinny być estetycznie przedstawione
          */
         Student[] student = new Student[3];
-        student[0]= new Student("jan" , "kowalski" ,116 );
+        student[0]= new Student("Jan" , "Kowalski" ,116 );
         student[1] = new Student("Bogdan", "jolek" ,5888);
         student[2] = new Student("Kamil" , "Kokoszek" , 519778);
         for (Student p : student)
