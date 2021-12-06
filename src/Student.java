@@ -1,18 +1,25 @@
 public class Student extends Osoba
 {
-
-
-    Student(String imie, String nazwisko, int indeks)
-    {
-        super(imie, nazwisko, indeks);
+    @Override
+    public String toString() {
+        return "WypiszInfo()" + "WydzialEnum{} Student{" +
+                "osoba=" + osoba +
+                '}';
     }
+
+    private Osoba osoba;
     private enum WydzialEnum
     {
         INFORMATYKA , LOGISTYKA , MATEMAYKA;
 
-        @Override
-        public String toString() {
-            return "WypiszInfo()" + "WydzialEnum{}";
-        }
+
     }
+
+    Student(String imie, String nazwisko, int indeks)
+    {
+        super(imie, nazwisko, indeks);
+
+    }
+
+
 }
